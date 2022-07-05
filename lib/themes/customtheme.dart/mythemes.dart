@@ -15,6 +15,16 @@ class MyTheme {
     primaryColorLight: LighColors.kPrimaryLightColor,
     primaryColorDark: DarkColors.kPrimaryDarkColor,
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    dialogTheme: DialogTheme(
+//backgroundColor: Colors.white,
+      contentTextStyle: TextStyle(
+        color: LighColors.kPrimaryColor,
+      ),
+      alignment: Alignment.center,
+      titleTextStyle: TextStyle(
+        color: LighColors.kPrimaryColor,
+      ),
+    ),
     //appbar theme
     appBarTheme: const AppBarTheme(
       color: Colors.white,
@@ -49,6 +59,16 @@ class MyTheme {
     primaryColorDark: LighColors.kPrimaryLightColor,
     primaryColorLight: DarkColors.kPrimaryDarkColor,
     visualDensity: VisualDensity.adaptivePlatformDensity,
+    dialogTheme: DialogTheme(
+//backgroundColor: Colors.white,
+      contentTextStyle: TextStyle(
+        color: LighColors.kPrimaryColor,
+      ),
+      alignment: Alignment.center,
+      titleTextStyle: TextStyle(
+        color: LighColors.kPrimaryColor,
+      ),
+    ),
     //appbar theme
     appBarTheme: const AppBarTheme(
       color: Colors.black,

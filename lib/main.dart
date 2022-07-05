@@ -1,5 +1,6 @@
 import 'package:ecommerce_ui/routes/routes.dart';
 import 'package:ecommerce_ui/themes/customtheme.dart/mythemes.dart';
+import 'package:ecommerce_ui/themes/customtheme.dart/themeservice.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,14 +17,11 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Shoppers Galleria',
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeService().theme,
       theme: MyTheme().lightTheme,
-      darkTheme: MyTheme().darkTheme, //theme(),
-      // We use routeName so that we dont need to remember the name
+      darkTheme: MyTheme().darkTheme,
       initialRoute: '/splashScreen',
       getPages: appRoutes(),
-      // initialRoute: SplashScreen.routeName,
-      // routes: routes,
     );
   }
 }
