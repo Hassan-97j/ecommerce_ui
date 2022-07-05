@@ -2,6 +2,7 @@
 
 import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
+import 'package:ecommerce_ui/const/pagesname.dart';
 
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
@@ -37,7 +38,7 @@ class SignUpForm extends StatelessWidget with BaseController {
                 if (signupController.formKey.currentState!.validate()) {
                   signupController.formKey.currentState!.save();
 
-                  Get.toNamed('/completeProfileScreen');
+                  Get.toNamed(PagesNames.completeprofilescreen);
                 }
               },
             ),

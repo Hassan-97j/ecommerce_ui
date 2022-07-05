@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class NoAccountText extends StatelessWidget {
           ),
         ),
         GestureDetector(
-          onTap: () => Get.toNamed('/signUpScreen'),
+          onTap: () => Get.toNamed(PagesNames.signupscreen),
           child: Text(
             ConstantStrings.signup,
             style: GoogleFonts.varelaRound(

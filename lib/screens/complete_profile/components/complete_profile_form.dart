@@ -2,6 +2,7 @@
 
 import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/screens/complete_profile/controller/completeprofilecontroller.dart';
@@ -36,7 +37,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
               text: ConstantStrings.continuE,
               press: () {
                 if (compProfileController.formKey.currentState!.validate()) {
-                  Get.toNamed('/otpScreen');
+                  Get.toNamed(PagesNames.otpscreen);
                 }
               },
             ),

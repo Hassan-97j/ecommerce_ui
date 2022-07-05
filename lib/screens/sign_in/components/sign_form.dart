@@ -3,6 +3,7 @@
 import 'package:ecommerce_ui/components/default_button.dart';
 import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/screens/sign_in/controller/signincontroller.dart';
@@ -45,7 +46,7 @@ class SignForm extends StatelessWidget with BaseController {
                 ),
                 const Spacer(),
                 GestureDetector(
-                  onTap: () => Get.toNamed('/forgotPAsswordScreen'),
+                  onTap: () => Get.toNamed(PagesNames.forgotpasswordscreen),
                   child: Text(
                     ConstantStrings.forgotpassword,
                     style: TextStyle(
@@ -65,7 +66,7 @@ class SignForm extends StatelessWidget with BaseController {
                   signInController.formKey.currentState!.save();
                   KeyboardUtil.hideKeyboard(context);
 
-                  Get.toNamed('/loginSuccessScreen');
+                  Get.toNamed(PagesNames.loginsuccessscreen);
                 }
               },
             ),

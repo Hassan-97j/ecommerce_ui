@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/const/assetsname.dart';
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class Body extends StatelessWidget {
         SizedBox(height: SizeConfig.screenHeight * 0.04),
         Image.asset(
           AssetsName.successimage,
-          height: SizeConfig.screenHeight * 0.4, 
+          height: SizeConfig.screenHeight * 0.4,
         ),
         SizedBox(height: SizeConfig.screenHeight * 0.08),
         Text(
@@ -32,7 +33,7 @@ class Body extends StatelessWidget {
           child: DefaultButton(
             text: ConstantStrings.backtohome,
             press: () {
-              Get.toNamed('/homeScreen');
+              Get.toNamed(PagesNames.homescreen);
             },
           ),
         ),

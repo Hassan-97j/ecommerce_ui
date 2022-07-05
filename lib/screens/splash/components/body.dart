@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:ecommerce_ui/const/basecontroller.dart';
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/screens/splash/components/splash_content.dart';
 import 'package:ecommerce_ui/screens/splash/controller/splashcontroller.dart';
@@ -54,7 +55,7 @@ class Body extends StatelessWidget with BaseController {
                       DefaultButton(
                         text: ConstantStrings.continuE,
                         press: () {
-                          Get.toNamed('/signInScreen');
+                          Get.toNamed(PagesNames.signinscreen);
                         },
                       ),
                       const Spacer(),

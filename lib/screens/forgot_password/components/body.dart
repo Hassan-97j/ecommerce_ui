@@ -1,5 +1,6 @@
 import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/constants.dart';
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
@@ -108,7 +109,7 @@ class ForgotPassFormState extends State<ForgotPassForm> {
             text: ConstantStrings.continuE,
             press: () {
               if (_formKey.currentState!.validate()) {
-                Get.toNamed('/loginScreen');
+                Get.toNamed(PagesNames.signinscreen);
               }
             },
           ),
