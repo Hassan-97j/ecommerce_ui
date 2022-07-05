@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DefaultButton extends StatelessWidget {
   const DefaultButton({
@@ -25,7 +26,7 @@ class DefaultButton extends StatelessWidget {
         onPressed: press as void Function()?,
         child: Text(
           text!,
-          style: TextStyle(
+          style: GoogleFonts.varelaRound(
             fontSize: getProportionateScreenWidth(18),
             color: Theme.of(context).scaffoldBackgroundColor,
           ),

@@ -4,11 +4,13 @@ import 'package:ecommerce_ui/components/coustom_bottom_nav_bar.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/screens/home/controller/homecontroller.dart';
 import 'package:ecommerce_ui/themes/customtheme.dart/themeservice.dart';
+import 'package:ecommerce_ui/themes/forlightmode/lighttextsyle.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/const/enums.dart';
 
 import 'package:ecommerce_ui/screens/home/components/body.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget with BaseController {
   static String routeName = "/home";
@@ -44,9 +46,8 @@ class HomeScreen extends StatelessWidget with BaseController {
                                 const EdgeInsets.symmetric(horizontal: 12),
                             title: Text(
                               homeController.changetitle(),
-                              // style: Get.theme.textTheme.titleSmall!.copyWith(
-                              //   color: Get.theme.primaryColorLight,
-                              // ),
+                              style: GoogleFonts.varelaRound(
+                                  color: Theme.of(context).primaryColor),
                             ),
                             activeTrackColor: Colors.grey.withAlpha(125),
                             activeColor: Colors.grey.withAlpha(2),

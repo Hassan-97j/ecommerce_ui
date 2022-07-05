@@ -2,6 +2,7 @@ import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ecommerce_ui/models/product.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProductDescription extends StatelessWidget {
   const ProductDescription({
@@ -23,7 +24,9 @@ class ProductDescription extends StatelessWidget {
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
           child: Text(
             product.title,
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.headline6!.copyWith(
+                  color: Theme.of(context).primaryColorDark,
+                ),
           ),
         ),
         Align(
@@ -57,6 +60,9 @@ class ProductDescription extends StatelessWidget {
           child: Text(
             product.description,
             maxLines: 3,
+            style: GoogleFonts.varelaRound(
+              color: Theme.of(context).primaryColorDark,
+            ),
           ),
         ),
         Padding(

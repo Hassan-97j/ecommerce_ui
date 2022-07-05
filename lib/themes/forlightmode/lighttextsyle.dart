@@ -2,9 +2,10 @@ import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/themes/forlightmode/lightcolors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LightTextStyle {
-  static TextStyle headingStyle = TextStyle(
+  static TextStyle headingStyle = GoogleFonts.varelaRound(
     fontSize: getProportionateScreenWidth(28),
     fontWeight: FontWeight.bold,
     color: Theme.of(Get.context!).primaryColorDark,

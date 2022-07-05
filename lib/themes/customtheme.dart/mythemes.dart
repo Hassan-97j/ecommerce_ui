@@ -3,6 +3,7 @@ import 'package:ecommerce_ui/themes/fordarkmode/darktextstyle.dart';
 import 'package:ecommerce_ui/themes/forlightmode/lightcolors.dart';
 import 'package:ecommerce_ui/themes/forlightmode/lighttextsyle.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyTheme {
   ///////////////////////
@@ -17,26 +18,28 @@ class MyTheme {
     visualDensity: VisualDensity.adaptivePlatformDensity,
     dialogTheme: DialogTheme(
 //backgroundColor: Colors.white,
-      contentTextStyle: TextStyle(
+      contentTextStyle: GoogleFonts.varelaRound(
         color: LighColors.kPrimaryColor,
       ),
       alignment: Alignment.center,
-      titleTextStyle: TextStyle(
+      titleTextStyle: GoogleFonts.varelaRound(
         color: LighColors.kPrimaryColor,
       ),
     ),
     //appbar theme
-    appBarTheme: const AppBarTheme(
+    appBarTheme: AppBarTheme(
       color: Colors.white,
       elevation: 0,
-      iconTheme: IconThemeData(color: Colors.black),
-      titleTextStyle: TextStyle(color: Color(0XFF8B8B8B), fontSize: 18),
+      iconTheme: const IconThemeData(color: Colors.black),
+      titleTextStyle:
+          GoogleFonts.varelaRound(color: const Color(0XFF8B8B8B), fontSize: 18),
     ),
     //text theme
-    textTheme: TextTheme(
-      bodyText1: TextStyle(color: LighColors.kTextColor),
-      bodyText2: TextStyle(color: LighColors.kTextColor),
-    ),
+    textTheme: GoogleFonts.varelaRoundTextTheme(),
+    // textTheme: TextTheme(
+    //   bodyText1: TextStyle(color: LighColors.kTextColor),
+    //   bodyText2: TextStyle(color: LighColors.kTextColor),
+    // ),
     //input decoration theme
     inputDecorationTheme: InputDecorationTheme(
       floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -59,29 +62,31 @@ class MyTheme {
     primaryColorDark: LighColors.kPrimaryLightColor,
     primaryColorLight: DarkColors.kPrimaryDarkColor,
     visualDensity: VisualDensity.adaptivePlatformDensity,
+
     dialogTheme: DialogTheme(
 //backgroundColor: Colors.white,
-      contentTextStyle: TextStyle(
+      contentTextStyle: GoogleFonts.varelaRound(
         color: LighColors.kPrimaryColor,
       ),
       alignment: Alignment.center,
-      titleTextStyle: TextStyle(
+      titleTextStyle: GoogleFonts.varelaRound(
         color: LighColors.kPrimaryColor,
       ),
     ),
     //appbar theme
-    appBarTheme: const AppBarTheme(
+    appBarTheme: AppBarTheme(
       color: Colors.black,
       elevation: 0,
-      iconTheme: IconThemeData(color: Colors.white),
-      titleTextStyle:
-          TextStyle(color: Color.fromARGB(255, 230, 216, 216), fontSize: 18),
+      iconTheme: const IconThemeData(color: Colors.white),
+      titleTextStyle: GoogleFonts.varelaRound(
+          color: const Color.fromARGB(255, 230, 216, 216), fontSize: 18),
     ),
     //text theme
-    textTheme: TextTheme(
-      bodyText1: TextStyle(color: DarkColors.kTextColor),
-      bodyText2: TextStyle(color: DarkColors.kTextColor),
-    ),
+    textTheme: GoogleFonts.varelaRoundTextTheme(),
+    // textTheme: TextTheme(
+    //   bodyText1: TextStyle(color: DarkColors.kTextColor),
+    //   bodyText2: TextStyle(color: DarkColors.kTextColor),
+    // ),
     //input decoration theme
     inputDecorationTheme: InputDecorationTheme(
       floatingLabelBehavior: FloatingLabelBehavior.always,

@@ -1,9 +1,10 @@
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/themes/fordarkmode/darkcolors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DarkTextStyle {
-  static TextStyle headingStyle = TextStyle(
+  static TextStyle headingStyle = GoogleFonts.varelaRound(
     fontSize: getProportionateScreenWidth(28),
     fontWeight: FontWeight.bold,
     color: Colors.white70,
