@@ -1,3 +1,5 @@
+import 'package:ecommerce_ui/const/pagesname.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/routes/routes.dart';
 import 'package:ecommerce_ui/themes/customtheme.dart/mythemes.dart';
 import 'package:ecommerce_ui/themes/customtheme.dart/themeservice.dart';
@@ -11,16 +13,15 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Shoppers Galleria',
+      title: ConstantStrings.shoppersGalleria,
       themeMode: ThemeService().theme,
       theme: MyTheme().lightTheme,
       darkTheme: MyTheme().darkTheme,
-      initialRoute: '/splashScreen',
+      initialRoute: PagesNames.splashscreen,
       getPages: appRoutes(),
     );
   }

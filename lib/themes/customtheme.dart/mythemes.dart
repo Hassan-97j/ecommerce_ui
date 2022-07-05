@@ -36,10 +36,7 @@ class MyTheme {
     ),
     //text theme
     textTheme: GoogleFonts.varelaRoundTextTheme(),
-    // textTheme: TextTheme(
-    //   bodyText1: TextStyle(color: LighColors.kTextColor),
-    //   bodyText2: TextStyle(color: LighColors.kTextColor),
-    // ),
+
     //input decoration theme
     inputDecorationTheme: InputDecorationTheme(
       floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -83,10 +80,7 @@ class MyTheme {
     ),
     //text theme
     textTheme: GoogleFonts.varelaRoundTextTheme(),
-    // textTheme: TextTheme(
-    //   bodyText1: TextStyle(color: DarkColors.kTextColor),
-    //   bodyText2: TextStyle(color: DarkColors.kTextColor),
-    // ),
+
     //input decoration theme
     inputDecorationTheme: InputDecorationTheme(
       floatingLabelBehavior: FloatingLabelBehavior.always,

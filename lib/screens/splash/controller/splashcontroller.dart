@@ -28,8 +28,8 @@ class SplashController extends GetxController {
       width: currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
         color: currentPage == index
-            ? Theme.of(Get.context!).primaryColor // LighColors.kPrimaryColor
-            : Theme.of(Get.context!).primaryColorLight, // Color(0xFFD8D8D8),
+            ? Theme.of(Get.context!).primaryColor
+            : Theme.of(Get.context!).primaryColorLight, 
         borderRadius: BorderRadius.circular(3),
       ),
     );

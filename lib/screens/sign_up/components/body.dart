@@ -25,7 +25,11 @@ class Body extends StatelessWidget with BaseController {
                 SizedBox(height: SizeConfig.screenHeight * 0.04), // 4%
                 Text(
                   ConstantStrings.registeraccount,
-                  style: Theme.of(context).textTheme.headline1,
+                  style: TextStyle(
+                    color: Theme.of(context).primaryColorDark,
+                    fontSize: getProportionateScreenWidth(28),
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 Text(
                   ConstantStrings.completeDetails,
