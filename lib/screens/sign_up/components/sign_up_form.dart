@@ -62,7 +62,7 @@ class SignUpForm extends StatelessWidget with BaseController {
         labelText: ConstantStrings.confimPassword,
         hintText: ConstantStrings.reenterpassword,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+        suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.lockicon),
       ),
     );
   }

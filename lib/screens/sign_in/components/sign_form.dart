@@ -90,7 +90,7 @@ class SignForm extends StatelessWidget with BaseController {
         labelText: ConstantStrings.password,
         hintText: ConstantStrings.enterpassword,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+        suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.lockicon),
       ),
     );
   }
