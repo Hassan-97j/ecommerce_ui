@@ -29,9 +29,11 @@ class OtpForm extends StatelessWidget with BaseController {
                 SizedBox(
                   width: getProportionateScreenWidth(60),
                   child: TextFormField(
+                   
                     autofocus: true,
                     obscureText: true,
-                    style: const TextStyle(fontSize: 24),
+                    style: TextStyle(
+                        fontSize: 24, color: Get.theme.primaryColorDark),
                     keyboardType: TextInputType.number,
                     textAlign: TextAlign.center,
                     decoration: otpInputDecoration,
@@ -46,7 +48,8 @@ class OtpForm extends StatelessWidget with BaseController {
                   child: TextFormField(
                     focusNode: otpController.pin2FocusNode,
                     obscureText: true,
-                    style: const TextStyle(fontSize: 24),
+                    style: TextStyle(
+                        fontSize: 24, color: Get.theme.primaryColorDark),
                     keyboardType: TextInputType.number,
                     textAlign: TextAlign.center,
                     decoration: otpInputDecoration,
@@ -59,7 +62,8 @@ class OtpForm extends StatelessWidget with BaseController {
                   child: TextFormField(
                     focusNode: otpController.pin3FocusNode,
                     obscureText: true,
-                    style: const TextStyle(fontSize: 24),
+                    style: TextStyle(
+                        fontSize: 24, color: Get.theme.primaryColorDark),
                     keyboardType: TextInputType.number,
                     textAlign: TextAlign.center,
                     decoration: otpInputDecoration,
@@ -72,7 +76,8 @@ class OtpForm extends StatelessWidget with BaseController {
                   child: TextFormField(
                     focusNode: otpController.pin4FocusNode,
                     obscureText: true,
-                    style: const TextStyle(fontSize: 24),
+                    style: TextStyle(
+                        fontSize: 24, color: Get.theme.primaryColorDark),
                     keyboardType: TextInputType.number,
                     textAlign: TextAlign.center,
                     decoration: otpInputDecoration,

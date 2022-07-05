@@ -49,6 +49,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
 
   TextFormField buildAddressFormField() {
     return TextFormField(
+       style: TextStyle(color: Get.theme.primaryColorDark),
       onSaved: (newValue) => compProfileController.address = newValue,
       onChanged: (value) {
         compProfileController.onAddressChanged(value);
@@ -67,6 +68,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
 
   TextFormField buildPhoneNumberFormField() {
     return TextFormField(
+       style: TextStyle(color: Get.theme.primaryColorDark),
       keyboardType: TextInputType.phone,
       onSaved: (newValue) => compProfileController.phoneNumber = newValue,
       onChanged: (value) {
@@ -86,6 +88,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
 
   TextFormField buildLastNameFormField() {
     return TextFormField(
+       style: TextStyle(color: Get.theme.primaryColorDark),
       onSaved: (newValue) => compProfileController.lastName = newValue,
       decoration: InputDecoration(
         labelText: ConstantStrings.lname,
@@ -98,6 +101,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
 
   TextFormField buildFirstNameFormField() {
     return TextFormField(
+       style: TextStyle(color: Get.theme.primaryColorDark),
       onSaved: (newValue) => compProfileController.firstName = newValue,
       onChanged: (value) {
         compProfileController.onFirstnameChanged(value);

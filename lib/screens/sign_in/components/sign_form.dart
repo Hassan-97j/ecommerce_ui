@@ -78,6 +78,7 @@ class SignForm extends StatelessWidget with BaseController {
 
   TextFormField buildPasswordFormField() {
     return TextFormField(
+      style: TextStyle(color: Get.theme.primaryColorDark),
       obscureText: true,
       onSaved: (newValue) => signInController.password = newValue,
       onChanged: (value) {
@@ -97,6 +98,7 @@ class SignForm extends StatelessWidget with BaseController {
 
   TextFormField buildEmailFormField() {
     return TextFormField(
+      style: TextStyle(color: Get.theme.primaryColorDark),
       keyboardType: TextInputType.emailAddress,
       onSaved: (newValue) => signInController.email = newValue,
       onChanged: (value) {

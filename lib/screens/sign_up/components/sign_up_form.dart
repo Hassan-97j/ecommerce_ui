@@ -35,11 +35,11 @@ class SignUpForm extends StatelessWidget with BaseController {
             DefaultButton(
               text: ConstantStrings.continuE,
               press: () {
-                if (signupController.formKey.currentState!.validate()) {
-                  signupController.formKey.currentState!.save();
+                // if (signupController.formKey.currentState!.validate()) {
+                //  signupController.formKey.currentState!.save();
 
-                  Get.toNamed(PagesNames.completeprofilescreen);
-                }
+                Get.toNamed(PagesNames.completeprofilescreen);
+                // }
               },
             ),
           ],
@@ -50,6 +50,7 @@ class SignUpForm extends StatelessWidget with BaseController {
 
   TextFormField buildConformPassFormField() {
     return TextFormField(
+      style: TextStyle(color: Get.theme.primaryColorDark),
       obscureText: true,
       onSaved: (newValue) => signupController.conform_password = newValue,
       onChanged: (value) {
@@ -69,6 +70,7 @@ class SignUpForm extends StatelessWidget with BaseController {
 
   TextFormField buildPasswordFormField() {
     return TextFormField(
+      style: TextStyle(color: Get.theme.primaryColorDark),
       obscureText: true,
       onSaved: (newValue) => signupController.password = newValue,
       onChanged: (value) {
@@ -88,6 +90,7 @@ class SignUpForm extends StatelessWidget with BaseController {
 
   TextFormField buildEmailFormField() {
     return TextFormField(
+      style: TextStyle(color: Get.theme.primaryColorDark),
       keyboardType: TextInputType.emailAddress,
       onSaved: (newValue) => signupController.email = newValue,
       onChanged: (value) {

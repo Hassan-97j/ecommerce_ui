@@ -21,7 +21,11 @@ class Body extends StatelessWidget {
               SizedBox(height: SizeConfig.screenHeight * 0.05),
               Text(
                 ConstantStrings.otpverfication,
-                style: Theme.of(context).textTheme.headline1,
+                style: TextStyle(
+                  color: Theme.of(context).primaryColorDark,
+                  fontSize: getProportionateScreenWidth(28),
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               Text(ConstantStrings.wesentto),
               buildTimer(),

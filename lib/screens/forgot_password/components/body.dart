@@ -1,10 +1,13 @@
+// ignore_for_file: must_be_immutable
+
+import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/screens/forgot_password/components/forgotpassform.dart';
 import 'package:flutter/material.dart';
 
-class Body extends StatelessWidget {
-  const Body({Key? key}) : super(key: key);
+class Body extends StatelessWidget with BaseController {
+  Body({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +36,7 @@ class Body extends StatelessWidget {
                 ),
               ),
               SizedBox(height: SizeConfig.screenHeight * 0.1),
-              const ForgotPassForm(),
+              ForgotPassForm(),
             ],
           ),
         ),

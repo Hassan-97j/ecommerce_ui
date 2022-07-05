@@ -22,8 +22,14 @@ class Body extends StatelessWidget with BaseController {
             child: Column(
               children: [
                 SizedBox(height: SizeConfig.screenHeight * 0.03),
-                Text(ConstantStrings.completeProfile,
-                    style: Theme.of(context).textTheme.headline1),
+                Text(
+                  ConstantStrings.completeProfile,
+                  style: TextStyle(
+                    color: Theme.of(context).primaryColorDark,
+                    fontSize: getProportionateScreenWidth(28),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
                 Text(
                   ConstantStrings.completeDetails,
                   textAlign: TextAlign.center,
