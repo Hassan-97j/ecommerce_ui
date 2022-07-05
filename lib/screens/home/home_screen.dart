@@ -4,7 +4,6 @@ import 'package:ecommerce_ui/components/coustom_bottom_nav_bar.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/screens/home/controller/homecontroller.dart';
 import 'package:ecommerce_ui/themes/customtheme.dart/themeservice.dart';
-import 'package:ecommerce_ui/themes/forlightmode/lighttextsyle.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/const/enums.dart';
 
