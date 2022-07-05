@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
@@ -45,15 +46,15 @@ class Body extends StatelessWidget with BaseController {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SocalCard(
-                      icon: "assets/icons/google-icon.svg",
+                      icon: AssetsName.googleicon,
                       press: () {},
                     ),
                     SocalCard(
-                      icon: "assets/icons/facebook-2.svg",
+                      icon: AssetsName.facebookicon,
                       press: () {},
                     ),
                     SocalCard(
-                      icon: "assets/icons/twitter.svg",
+                      icon: AssetsName.twittericon,
                       press: () {},
                     ),
                   ],

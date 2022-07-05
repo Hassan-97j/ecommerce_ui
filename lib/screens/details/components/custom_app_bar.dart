@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -30,9 +31,9 @@ class CustomAppBar extends StatelessWidget {
                   backgroundColor: Theme.of(context).primaryColorLight,
                   padding: EdgeInsets.zero,
                 ),
-                onPressed: () => Get.back(), //Navigator.pop(context),
+                onPressed: () => Get.back(),
                 child: SvgPicture.asset(
-                  "assets/icons/Back ICon.svg",
+                  AssetsName.backicon,
                   height: 15,
                   color: Theme.of(context).primaryColorDark,
                 ),
@@ -57,7 +58,7 @@ class CustomAppBar extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 5),
-                  SvgPicture.asset("assets/icons/Star Icon.svg"),
+                  SvgPicture.asset(AssetsName.staricon),
                 ],
               ),
             )

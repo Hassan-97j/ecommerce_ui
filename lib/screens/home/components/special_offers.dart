@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class SpecialOffers extends StatelessWidget {
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
           child: SectionTitle(
-            title: "Special for you",
+            title: ConstantStrings.specialforu,
             press: () {},
           ),
         ),
@@ -26,13 +27,13 @@ class SpecialOffers extends StatelessWidget {
           child: Row(
             children: [
               SpecialOfferCard(
-                image: "assets/images/Image Banner 2.png",
+                image: AssetsName.imagebanner2,
                 category: ConstantStrings.smartphone,
                 numOfBrands: 18,
                 press: () {},
               ),
               SpecialOfferCard(
-                image: "assets/images/Image Banner 3.png",
+                image: AssetsName.imagebanner3,
                 category: ConstantStrings.fashion,
                 numOfBrands: 24,
                 press: () {},

@@ -82,4 +82,5 @@ class ConstantStrings {
   static String seemore = "See More";
   static String smartphone = "Smartphone";
   static String fashion = "Fashion";
+  static String specialforu = "Special for you";
 }

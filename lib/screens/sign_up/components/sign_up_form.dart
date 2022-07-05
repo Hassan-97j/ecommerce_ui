@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
 
 import 'package:ecommerce_ui/const/size_config.dart';
@@ -79,7 +80,7 @@ class SignUpForm extends StatelessWidget with BaseController {
         labelText: ConstantStrings.password,
         hintText: ConstantStrings.enterpassword,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+        suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.lockicon),
       ),
     );
   }
@@ -98,7 +99,7 @@ class SignUpForm extends StatelessWidget with BaseController {
         labelText: ConstantStrings.email,
         hintText: ConstantStrings.enterEmail,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+        suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.mailicon),
       ),
     );
   }

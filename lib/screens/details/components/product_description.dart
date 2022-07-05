@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
@@ -45,7 +46,7 @@ class ProductDescription extends StatelessWidget {
               ),
             ),
             child: SvgPicture.asset(
-              "assets/icons/Heart Icon_2.svg",
+              AssetsName.heart2icon,
               color: product.isFavourite
                   ? const Color(0xFFFF4848)
                   : const Color(0xFFDBDEE4),

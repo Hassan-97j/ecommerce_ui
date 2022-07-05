@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:ecommerce_ui/components/default_button.dart';
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
@@ -107,7 +108,7 @@ class SignForm extends StatelessWidget with BaseController {
         labelText: ConstantStrings.email,
         hintText: ConstantStrings.enterEmail,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+        suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.mailicon),
       ),
     );
   }

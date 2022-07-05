@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/constants.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
@@ -97,8 +98,7 @@ class ForgotPassFormState extends State<ForgotPassForm> {
               labelText: ConstantStrings.email,
               hintText: ConstantStrings.enterEmail,
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon:
-                  const CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+              suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.mailicon),
             ),
           ),
           SizedBox(height: getProportionateScreenHeight(30)),

@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
@@ -58,8 +59,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
         labelText: ConstantStrings.address,
         hintText: ConstantStrings.enteraddress,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon:
-            const CustomSurffixIcon(svgIcon: "assets/icons/Location point.svg"),
+        suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.locationicon),
       ),
     );
   }
@@ -78,7 +78,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
         labelText: ConstantStrings.phone,
         hintText: ConstantStrings.enterphone,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Phone.svg"),
+        suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.phoneicon),
       ),
     );
   }
@@ -90,7 +90,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
         labelText: ConstantStrings.lname,
         hintText: ConstantStrings.enterlname,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/User.svg"),
+        suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.user2icon),
       ),
     );
   }
@@ -108,7 +108,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
         labelText: ConstantStrings.fname,
         hintText: ConstantStrings.enterfname,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/User.svg"),
+        suffixIcon: CustomSurffixIcon(svgIcon: AssetsName.user2icon),
       ),
     );
   }

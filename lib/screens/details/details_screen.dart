@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ecommerce_ui/models/product.dart';
@@ -5,7 +6,7 @@ import 'package:ecommerce_ui/screens/details/components/body.dart';
 import 'package:ecommerce_ui/screens/details/components/custom_app_bar.dart';
 
 class DetailsScreen extends StatelessWidget {
-  static String routeName = "/details";
+  static String routeName = Pages.details;
 
   const DetailsScreen({Key? key}) : super(key: key);
 

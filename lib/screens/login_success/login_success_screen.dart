@@ -1,10 +1,11 @@
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ecommerce_ui/screens/login_success/components/body.dart';
 
 class LoginSuccessScreen extends StatelessWidget {
-  static String routeName = "/login_success";
+  static String routeName = Pages.loginsuccess;
 
   const LoginSuccessScreen({Key? key}) : super(key: key);
   @override

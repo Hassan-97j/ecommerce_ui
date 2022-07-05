@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 
@@ -17,27 +18,27 @@ class Body extends StatelessWidget {
           const SizedBox(height: 20),
           ProfileMenu(
             text: ConstantStrings.myaccount,
-            icon: "assets/icons/User Icon.svg",
+            icon: AssetsName.usericon,
             press: () => {},
           ),
           ProfileMenu(
             text: ConstantStrings.notifications,
-            icon: "assets/icons/Bell.svg",
+            icon: AssetsName.bellicon,
             press: () {},
           ),
           ProfileMenu(
             text: ConstantStrings.settings,
-            icon: "assets/icons/Settings.svg",
+            icon: AssetsName.settingsicon,
             press: () {},
           ),
           ProfileMenu(
             text: ConstantStrings.helpCenter,
-            icon: "assets/icons/Question mark.svg",
+            icon: AssetsName.questionicon,
             press: () {},
           ),
           ProfileMenu(
             text: ConstantStrings.logout,
-            icon: "assets/icons/Log out.svg",
+            icon: AssetsName.logouticon,
             press: () {},
           ),
         ],

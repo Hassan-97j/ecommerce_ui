@@ -7,7 +7,7 @@ import 'package:ecommerce_ui/screens/cart/components/body.dart';
 import 'package:ecommerce_ui/screens/cart/components/check_out_card.dart';
 
 class CartScreen extends StatelessWidget {
-  static String routeName = PagesNames.cartscreen;
+  static String routeName = Pages.cartscreen;
 
   const CartScreen({Key? key}) : super(key: key);
   @override

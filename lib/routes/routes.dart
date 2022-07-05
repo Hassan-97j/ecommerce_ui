@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/screens/cart/cart_screen.dart';
 import 'package:ecommerce_ui/screens/complete_profile/complete_profile_screen.dart';
 import 'package:ecommerce_ui/screens/details/details_screen.dart';
@@ -14,14 +15,14 @@ import 'package:get/get.dart';
 appRoutes() => [
       //splash
       GetPage(
-        name: '/splashScreen',
+        name: PagesNames.splashscreen,
         page: () => const SplashScreen(),
         transition: Transition.leftToRightWithFade,
         transitionDuration: const Duration(milliseconds: 500),
       ),
       //sign in screen
       GetPage(
-        name: '/signInScreen',
+        name: PagesNames.signinscreen,
         page: () => const SignInScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,
@@ -29,7 +30,7 @@ appRoutes() => [
       ),
       //forgot password screen
       GetPage(
-        name: '/forgotPAsswordScreen',
+        name: PagesNames.forgotpasswordscreen,
         page: () => const ForgotPasswordScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,
@@ -37,7 +38,7 @@ appRoutes() => [
       ),
       // login success screen
       GetPage(
-        name: '/loginSuccessScreen',
+        name: PagesNames.loginsuccessscreen,
         page: () => const LoginSuccessScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,
@@ -45,7 +46,7 @@ appRoutes() => [
       ),
       // sign up screen
       GetPage(
-        name: '/signUpScreen',
+        name: PagesNames.signupscreen,
         page: () => const SignUpScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,
@@ -53,7 +54,7 @@ appRoutes() => [
       ),
       // complete profile screen
       GetPage(
-        name: '/completeProfileScreen',
+        name: PagesNames.completeprofilescreen,
         page: () => const CompleteProfileScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,
@@ -61,7 +62,7 @@ appRoutes() => [
       ),
       // otp screen
       GetPage(
-        name: '/otpScreen',
+        name: PagesNames.otpscreen,
         page: () => const OtpScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,
@@ -69,7 +70,7 @@ appRoutes() => [
       ),
       //home screen
       GetPage(
-        name: '/homeScreen',
+        name: PagesNames.homescreen,
         page: () => HomeScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,
@@ -79,7 +80,7 @@ appRoutes() => [
       ),
       //detail screen
       GetPage(
-        name: '/detailScreen',
+        name: PagesNames.detailscreen,
         page: () => const DetailsScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,
@@ -87,7 +88,7 @@ appRoutes() => [
       ),
       // cart screen
       GetPage(
-        name: '/cartScreen',
+        name: PagesNames.cartscreen,
         page: () => const CartScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,
@@ -95,7 +96,7 @@ appRoutes() => [
       ),
       //profile screen
       GetPage(
-        name: '/profileScreen',
+        name: PagesNames.profilescreen,
         page: () => const ProfileScreen(),
         middlewares: [MyMiddelware()],
         transition: Transition.leftToRightWithFade,

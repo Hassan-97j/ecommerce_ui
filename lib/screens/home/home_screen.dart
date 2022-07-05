@@ -2,6 +2,7 @@
 
 import 'package:ecommerce_ui/components/coustom_bottom_nav_bar.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/screens/home/controller/homecontroller.dart';
 import 'package:ecommerce_ui/themes/customtheme.dart/themeservice.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget with BaseController {
-  static String routeName = "/home";
+  static String routeName = Pages.home;
 
   HomeScreen({Key? key}) : super(key: key);
   @override

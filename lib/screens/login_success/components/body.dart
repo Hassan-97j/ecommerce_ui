@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +14,8 @@ class Body extends StatelessWidget {
       children: [
         SizedBox(height: SizeConfig.screenHeight * 0.04),
         Image.asset(
-          "assets/images/success.png",
-          height: SizeConfig.screenHeight * 0.4, //40%
+          AssetsName.successimage,
+          height: SizeConfig.screenHeight * 0.4, 
         ),
         SizedBox(height: SizeConfig.screenHeight * 0.08),
         Text(

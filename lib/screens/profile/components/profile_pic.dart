@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -15,8 +16,8 @@ class ProfilePic extends StatelessWidget {
         fit: StackFit.expand,
         clipBehavior: Clip.none,
         children: [
-          const CircleAvatar(
-            backgroundImage: AssetImage("assets/images/Profile Image.png"),
+          CircleAvatar(
+            backgroundImage: AssetImage(AssetsName.profileimage),
           ),
           Positioned(
             right: -16,
@@ -37,7 +38,7 @@ class ProfilePic extends StatelessWidget {
                       Theme.of(context).primaryColorLight.withOpacity(0.8),
                 ),
                 onPressed: () {},
-                child: SvgPicture.asset("assets/icons/Camera Icon.svg"),
+                child: SvgPicture.asset(AssetsName.cameraicon),
               ),
             ),
           )
