@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -24,7 +25,7 @@ class FormError extends StatelessWidget {
     return Row(
       children: [
         SvgPicture.asset(
-          "assets/icons/Error.svg",
+          AssetsName.erroricon,
           height: getProportionateScreenWidth(14),
           width: getProportionateScreenWidth(14),
         ),

@@ -2,6 +2,7 @@
 
 import 'package:ecommerce_ui/components/default_button.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/models/product.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +45,7 @@ class Body extends StatelessWidget with BaseController {
                           top: getProportionateScreenWidth(15),
                         ),
                         child: DefaultButton(
-                          text: "Add To Cart",
+                          text: ConstantStrings.addtocart,
                           press: () {},
                         ),
                       ),

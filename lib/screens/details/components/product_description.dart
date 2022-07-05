@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ecommerce_ui/models/product.dart';
@@ -75,7 +76,7 @@ class ProductDescription extends StatelessWidget {
             child: Row(
               children: [
                 Text(
-                  "See More Detail",
+                  ConstantStrings.seemoredetails,
                   style: TextStyle(
                       fontWeight: FontWeight.w600,
                       color: Theme.of(context).primaryColor),

@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,7 +15,7 @@ class NoAccountText extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Don’t have an account? ",
+          ConstantStrings.noAccount,
           style: GoogleFonts.varelaRound(
             fontSize: getProportionateScreenWidth(16),
             color: Theme.of(context).primaryColorDark,
@@ -23,7 +24,7 @@ class NoAccountText extends StatelessWidget {
         GestureDetector(
           onTap: () => Get.toNamed('/signUpScreen'),
           child: Text(
-            "Sign Up",
+            ConstantStrings.signup,
             style: GoogleFonts.varelaRound(
               fontSize: getProportionateScreenWidth(16),
               color: Theme.of(context).primaryColor,

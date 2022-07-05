@@ -1,4 +1,6 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/enums.dart';
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/themes/forlightmode/lightcolors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -39,29 +41,35 @@ class CustomBottomNavBar extends StatelessWidget {
             children: [
               IconButton(
                 icon: SvgPicture.asset(
-                  'assets/icons/Shop Icon.svg',
+                  AssetsName.shopicon,
                   color: MenuState.home == selectedMenu
                       ? Theme.of(context).primaryColor
                       : inActiveIconColor,
                 ),
-                onPressed: () => Get.toNamed('/homeScreen'),
+                onPressed: () => Get.toNamed(PagesNames.homescreen),
               ),
               IconButton(
-                icon: SvgPicture.asset('assets/icons/Heart Icon.svg'),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: SvgPicture.asset('assets/icons/Chat bubble Icon.svg'),
+                icon: SvgPicture.asset(
+                  AssetsName.hearticon,
+                ),
                 onPressed: () {},
               ),
               IconButton(
                 icon: SvgPicture.asset(
-                  'assets/icons/User Icon.svg',
+                  AssetsName.chaticon,
+                ),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: SvgPicture.asset(
+                  AssetsName.usericon,
                   color: MenuState.profile == selectedMenu
                       ? LighColors.kPrimaryColor
                       : inActiveIconColor,
                 ),
-                onPressed: () => Get.toNamed('/profileScreen'),
+                onPressed: () => Get.toNamed(
+                  PagesNames.profilescreen,
+                ),
               ),
             ],
           )),

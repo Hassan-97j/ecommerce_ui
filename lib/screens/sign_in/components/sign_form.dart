@@ -3,6 +3,7 @@
 import 'package:ecommerce_ui/components/default_button.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/screens/sign_in/controller/signincontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/components/custom_surfix_icon.dart';
@@ -36,7 +37,7 @@ class SignForm extends StatelessWidget with BaseController {
                   },
                 ),
                 Text(
-                  "Remember me",
+                  ConstantStrings.rememberme,
                   style: TextStyle(
                     color: Theme.of(context).primaryColorDark,
                   ),
@@ -45,7 +46,7 @@ class SignForm extends StatelessWidget with BaseController {
                 GestureDetector(
                   onTap: () => Get.toNamed('/forgotPAsswordScreen'),
                   child: Text(
-                    "Forgot Password",
+                    ConstantStrings.forgotpassword,
                     style: TextStyle(
                       decoration: TextDecoration.underline,
                       color: Theme.of(context).primaryColorDark,
@@ -57,7 +58,7 @@ class SignForm extends StatelessWidget with BaseController {
             FormError(errors: signInController.errors),
             SizedBox(height: getProportionateScreenHeight(20)),
             DefaultButton(
-              text: "Continue",
+              text: ConstantStrings.continuE,
               press: () {
                 if (signInController.formKey.currentState!.validate()) {
                   signInController.formKey.currentState!.save();
@@ -83,11 +84,11 @@ class SignForm extends StatelessWidget with BaseController {
       validator: (value) {
         return signInController.passwordValidator(value);
       },
-      decoration: const InputDecoration(
-        labelText: "Password",
-        hintText: "Enter your password",
+      decoration: InputDecoration(
+        labelText: ConstantStrings.password,
+        hintText: ConstantStrings.enterpassword,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
       ),
     );
   }
@@ -102,11 +103,11 @@ class SignForm extends StatelessWidget with BaseController {
       validator: (value) {
         return signInController.emailValidator(value);
       },
-      decoration: const InputDecoration(
-        labelText: "Email",
-        hintText: "Enter your email",
+      decoration: InputDecoration(
+        labelText: ConstantStrings.email,
+        hintText: ConstantStrings.enterEmail,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
       ),
     );
   }

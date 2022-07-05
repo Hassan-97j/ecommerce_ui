@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/components/product_card.dart';
 import 'package:ecommerce_ui/models/product.dart';
@@ -15,7 +16,10 @@ class PopularProducts extends StatelessWidget {
         Padding(
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
-          child: SectionTitle(title: "Popular Products", press: () {}),
+          child: SectionTitle(
+            title: ConstantStrings.popularproducts,
+            press: () {},
+          ),
         ),
         SizedBox(height: getProportionateScreenWidth(20)),
         SingleChildScrollView(
@@ -29,8 +33,7 @@ class PopularProducts extends StatelessWidget {
                     return ProductCard(product: demoProducts[index]);
                   }
 
-                  return const SizedBox
-                      .shrink(); // here by default width and height is 0
+                  return const SizedBox.shrink();
                 },
               ),
               SizedBox(width: getProportionateScreenWidth(20)),

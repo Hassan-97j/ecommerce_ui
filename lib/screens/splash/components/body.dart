@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:ecommerce_ui/const/basecontroller.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/screens/splash/components/splash_content.dart';
 import 'package:ecommerce_ui/screens/splash/controller/splashcontroller.dart';
 import 'package:flutter/material.dart';
@@ -51,7 +52,7 @@ class Body extends StatelessWidget with BaseController {
                       ),
                       const Spacer(flex: 3),
                       DefaultButton(
-                        text: "Continue",
+                        text: ConstantStrings.continuE,
                         press: () {
                           Get.toNamed('/signInScreen');
                         },

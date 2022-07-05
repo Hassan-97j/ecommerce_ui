@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ecommerce_ui/screens/forgot_password/components/body.dart';
@@ -10,7 +11,7 @@ class ForgotPasswordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Forgot Password"),
+        title: Text(ConstantStrings.forgotpassword),
       ),
       body: const Body(),
     );

@@ -2,12 +2,13 @@
 
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ecommerce_ui/screens/complete_profile/components/complete_profile_form.dart';
 
 class Body extends StatelessWidget with BaseController {
-   Body({Key? key}) : super(key: key);
+  Body({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +22,10 @@ class Body extends StatelessWidget with BaseController {
             child: Column(
               children: [
                 SizedBox(height: SizeConfig.screenHeight * 0.03),
-                Text("Complete Profile",
+                Text(ConstantStrings.completeProfile,
                     style: Theme.of(context).textTheme.headline1),
                 Text(
-                  "Complete your details or continue  \nwith social media",
+                  ConstantStrings.completeDetails,
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Theme.of(context).primaryColorDark),
                 ),
@@ -32,7 +33,7 @@ class Body extends StatelessWidget with BaseController {
                 CompleteProfileForm(),
                 SizedBox(height: getProportionateScreenHeight(30)),
                 Text(
-                  "By continuing your confirm that you agree \nwith our Term and Condition",
+                  ConstantStrings.termsandConditions,
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.caption,
                 ),

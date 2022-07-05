@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/themes/forlightmode/lightcolors.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
@@ -25,7 +26,7 @@ class SearchField extends StatelessWidget {
             border: InputBorder.none,
             focusedBorder: InputBorder.none,
             enabledBorder: InputBorder.none,
-            hintText: "Search product",
+            hintText: ConstantStrings.searchProducts,
             prefixIcon: const Icon(Icons.search)),
       ),
     );

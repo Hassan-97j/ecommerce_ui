@@ -3,6 +3,7 @@
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/constants.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/screens/otp/controller/otpcontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/components/default_button.dart';
@@ -78,7 +79,6 @@ class OtpForm extends StatelessWidget with BaseController {
                     onChanged: (value) {
                       if (value.length == 1) {
                         otpController.pin4FocusNode!.unfocus();
-                        // Then you need to check is the code is correct or not
                       }
                     },
                   ),
@@ -87,7 +87,7 @@ class OtpForm extends StatelessWidget with BaseController {
             ),
             SizedBox(height: SizeConfig.screenHeight * 0.15),
             DefaultButton(
-              text: "Continue",
+              text: ConstantStrings.continuE,
               press: () {},
             )
           ],

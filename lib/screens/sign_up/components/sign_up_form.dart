@@ -3,6 +3,7 @@
 import 'package:ecommerce_ui/const/basecontroller.dart';
 
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/screens/sign_up/controller/signupcontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/components/custom_surfix_icon.dart';
@@ -30,7 +31,7 @@ class SignUpForm extends StatelessWidget with BaseController {
             FormError(errors: signupController.errors),
             SizedBox(height: getProportionateScreenHeight(40)),
             DefaultButton(
-              text: "Continue",
+              text: ConstantStrings.continuE,
               press: () {
                 if (signupController.formKey.currentState!.validate()) {
                   signupController.formKey.currentState!.save();
@@ -55,11 +56,11 @@ class SignUpForm extends StatelessWidget with BaseController {
       validator: (value) {
         return signupController.confirmpasswordValidator(value);
       },
-      decoration: const InputDecoration(
-        labelText: "Confirm Password",
-        hintText: "Re-enter your password",
+      decoration: InputDecoration(
+        labelText: ConstantStrings.confimPassword,
+        hintText: ConstantStrings.reenterpassword,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
       ),
     );
   }
@@ -74,11 +75,11 @@ class SignUpForm extends StatelessWidget with BaseController {
       validator: (value) {
         return signupController.passwordValidator(value);
       },
-      decoration: const InputDecoration(
-        labelText: "Password",
-        hintText: "Enter your password",
+      decoration: InputDecoration(
+        labelText: ConstantStrings.password,
+        hintText: ConstantStrings.enterpassword,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
       ),
     );
   }
@@ -93,11 +94,11 @@ class SignUpForm extends StatelessWidget with BaseController {
       validator: (value) {
         return signupController.emailValidator(value);
       },
-      decoration: const InputDecoration(
-        labelText: "Email",
-        hintText: "Enter your email",
+      decoration: InputDecoration(
+        labelText: ConstantStrings.email,
+        hintText: ConstantStrings.enterEmail,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
       ),
     );
   }

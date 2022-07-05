@@ -1,10 +1,12 @@
 import 'package:ecommerce_ui/const/constants.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/components/custom_surfix_icon.dart';
 import 'package:ecommerce_ui/components/default_button.dart';
 import 'package:ecommerce_ui/components/form_error.dart';
 import 'package:ecommerce_ui/components/no_account_text.dart';
+import 'package:get/get.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -21,7 +23,7 @@ class Body extends StatelessWidget {
             children: [
               SizedBox(height: SizeConfig.screenHeight * 0.04),
               Text(
-                "Forgot Password",
+                ConstantStrings.forgotpassword,
                 style: TextStyle(
                   fontSize: getProportionateScreenWidth(28),
                   color: Theme.of(context).primaryColorDark,
@@ -29,7 +31,7 @@ class Body extends StatelessWidget {
                 ),
               ),
               Text(
-                "Please enter your email and we will send \nyou a link to return to your account",
+                ConstantStrings.pleaseenterEmail,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Theme.of(context).primaryColorDark,
@@ -91,23 +93,22 @@ class ForgotPassFormState extends State<ForgotPassForm> {
               }
               return null;
             },
-            decoration: const InputDecoration(
-              labelText: "Email",
-              hintText: "Enter your email",
-              // If  you are using latest version of flutter then lable text and hint text shown like this
-              // if you r using flutter less then 1.20.* then maybe this is not working properly
+            decoration: InputDecoration(
+              labelText: ConstantStrings.email,
+              hintText: ConstantStrings.enterEmail,
               floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+              suffixIcon:
+                  const CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
             ),
           ),
           SizedBox(height: getProportionateScreenHeight(30)),
           FormError(errors: errors),
           SizedBox(height: SizeConfig.screenHeight * 0.1),
           DefaultButton(
-            text: "Continue",
+            text: ConstantStrings.continuE,
             press: () {
               if (_formKey.currentState!.validate()) {
-                // Do what you want to do
+                Get.toNamed('/loginScreen');
               }
             },
           ),

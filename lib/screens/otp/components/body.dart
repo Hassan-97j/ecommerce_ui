@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/themes/forlightmode/lightcolors.dart';
 import 'package:flutter/material.dart';
 
@@ -19,19 +20,17 @@ class Body extends StatelessWidget {
             children: [
               SizedBox(height: SizeConfig.screenHeight * 0.05),
               Text(
-                "OTP Verification",
+                ConstantStrings.otpverfication,
                 style: Theme.of(context).textTheme.headline1,
               ),
-              const Text("We sent your code to +1 898 860 ***"),
+              Text(ConstantStrings.wesentto),
               buildTimer(),
               OtpForm(),
               SizedBox(height: SizeConfig.screenHeight * 0.1),
               GestureDetector(
-                onTap: () {
-                  // OTP code resend
-                },
+                onTap: () {},
                 child: Text(
-                  "Resend OTP Code",
+                  ConstantStrings.resendotp,
                   style: TextStyle(
                       decoration: TextDecoration.underline,
                       color: Theme.of(context).primaryColorDark),
@@ -48,7 +47,7 @@ class Body extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text("This code will expired in "),
+        Text(ConstantStrings.codeexpirein),
         TweenAnimationBuilder(
           tween: Tween(begin: 30.0, end: 0.0),
           duration: const Duration(seconds: 30),

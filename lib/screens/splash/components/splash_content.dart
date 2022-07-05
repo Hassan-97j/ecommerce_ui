@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 
@@ -15,10 +16,10 @@ class SplashContent extends StatelessWidget {
       children: <Widget>[
         const Spacer(),
         Text(
-          "TOKOTO",
+          ConstantStrings.shoppersGalleria,
           style: TextStyle(
             fontSize: getProportionateScreenWidth(36),
-            color: Theme.of(context).primaryColor, //LighColors.kPrimaryColor,
+            color: Theme.of(context).primaryColor,
             fontWeight: FontWeight.bold,
           ),
         ),

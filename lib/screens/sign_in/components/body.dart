@@ -2,13 +2,14 @@
 
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/components/no_account_text.dart';
 import 'package:ecommerce_ui/components/socal_card.dart';
 import 'package:ecommerce_ui/screens/sign_in/components/sign_form.dart';
 
 class Body extends StatelessWidget with BaseController {
-   Body({Key? key}) : super(key: key);
+  Body({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class Body extends StatelessWidget with BaseController {
               children: [
                 SizedBox(height: SizeConfig.screenHeight * 0.04),
                 Text(
-                  "Welcome Back",
+                  ConstantStrings.welcomeback,
                   style: TextStyle(
                     color: Theme.of(context).primaryColorDark,
                     fontSize: getProportionateScreenWidth(28),
@@ -31,7 +32,7 @@ class Body extends StatelessWidget with BaseController {
                   ),
                 ),
                 Text(
-                  "Sign in with your email and password  \nor continue with social media",
+                  ConstantStrings.signinwithsocial,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Theme.of(context).primaryColorDark,

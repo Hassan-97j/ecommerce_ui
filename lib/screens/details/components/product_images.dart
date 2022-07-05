@@ -17,12 +17,6 @@ class ProductImages extends StatelessWidget with BaseController {
 
   final Product product;
 
-//   @override
-//   ProductImagesState createState() => ProductImagesState();
-// }
-
-// class ProductImagesState extends State<ProductImages> {
-  // int selectedImage = 0;
   @override
   Widget build(BuildContext context) {
     return GetBuilder<DetailController>(
@@ -41,7 +35,6 @@ class ProductImages extends StatelessWidget with BaseController {
               ),
             ),
           ),
-          // SizedBox(height: getProportionateScreenWidth(20)),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -57,7 +50,6 @@ class ProductImages extends StatelessWidget with BaseController {
   GestureDetector buildSmallProductPreview(int index) {
     return GestureDetector(
       onTap: () {
-        // detailController.selectedImage = index;
         detailController.updateImage(index);
       },
       child: AnimatedContainer(

@@ -1,4 +1,6 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ecommerce_ui/components/default_button.dart';
@@ -15,7 +17,6 @@ class CheckoutCard extends StatelessWidget {
         vertical: getProportionateScreenWidth(15),
         horizontal: getProportionateScreenWidth(30),
       ),
-      // height: 174,
       decoration: BoxDecoration(
         color: Theme.of(context).primaryColorLight,
         borderRadius: const BorderRadius.only(
@@ -45,11 +46,13 @@ class CheckoutCard extends StatelessWidget {
                     color: Theme.of(context).scaffoldBackgroundColor,
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: SvgPicture.asset("assets/icons/receipt.svg"),
+                  child: SvgPicture.asset(
+                    AssetsName.reciepticon,
+                  ),
                 ),
                 const Spacer(),
                 Text(
-                  "Add voucher code",
+                  ConstantStrings.addvouchercode,
                   style: TextStyle(color: Theme.of(context).primaryColorDark),
                 ),
                 const SizedBox(width: 10),
@@ -66,14 +69,14 @@ class CheckoutCard extends StatelessWidget {
               children: [
                 Text.rich(
                   TextSpan(
-                    text: "Total:\n",
+                    text: ConstantStrings.total,
                     style: TextStyle(
                         color: Theme.of(context)
                             .primaryColorDark
                             .withOpacity(0.56)),
                     children: [
                       TextSpan(
-                        text: "\$337.15",
+                        text: ConstantStrings.amount,
                         style: TextStyle(
                             fontSize: 16,
                             color: Theme.of(context).primaryColorDark),
@@ -84,7 +87,7 @@ class CheckoutCard extends StatelessWidget {
                 SizedBox(
                   width: getProportionateScreenWidth(190),
                   child: DefaultButton(
-                    text: "Check Out",
+                    text: ConstantStrings.checkout,
                     press: () {},
                   ),
                 ),

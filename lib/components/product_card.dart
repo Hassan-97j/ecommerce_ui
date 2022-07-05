@@ -1,3 +1,5 @@
+import 'package:ecommerce_ui/const/assetsname.dart';
+import 'package:ecommerce_ui/const/pagesname.dart';
 import 'package:ecommerce_ui/models/product.dart';
 import 'package:ecommerce_ui/screens/details/details_screen.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
@@ -25,7 +27,7 @@ class ProductCard extends StatelessWidget {
         width: getProportionateScreenWidth(width),
         child: GestureDetector(
           onTap: () => Get.toNamed(
-            '/detailScreen',
+            PagesNames.detailscreen,
             arguments: ProductDetailsArguments(product: product),
           ),
           child: Column(
@@ -76,7 +78,7 @@ class ProductCard extends StatelessWidget {
                         shape: BoxShape.circle,
                       ),
                       child: SvgPicture.asset(
-                        "assets/icons/Heart Icon_2.svg",
+                        AssetsName.heart2icon,
                         color: product.isFavourite
                             ? const Color(0xFFFF4848)
                             : Theme.of(context).primaryColorDark,

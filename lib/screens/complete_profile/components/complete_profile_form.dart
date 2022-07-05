@@ -2,6 +2,7 @@
 
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:ecommerce_ui/screens/complete_profile/controller/completeprofilecontroller.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/components/custom_surfix_icon.dart';
@@ -31,7 +32,7 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
             FormError(errors: compProfileController.errors),
             SizedBox(height: getProportionateScreenHeight(40)),
             DefaultButton(
-              text: "continue",
+              text: ConstantStrings.continuE,
               press: () {
                 if (compProfileController.formKey.currentState!.validate()) {
                   Get.toNamed('/otpScreen');
@@ -53,12 +54,12 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
       validator: (value) {
         return compProfileController.addressValidator(value);
       },
-      decoration: const InputDecoration(
-        labelText: "Address",
-        hintText: "Enter your phone address",
+      decoration: InputDecoration(
+        labelText: ConstantStrings.address,
+        hintText: ConstantStrings.enteraddress,
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon:
-            CustomSurffixIcon(svgIcon: "assets/icons/Location point.svg"),
+            const CustomSurffixIcon(svgIcon: "assets/icons/Location point.svg"),
       ),
     );
   }
@@ -73,11 +74,11 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
       validator: (value) {
         return compProfileController.phoneValidator(value);
       },
-      decoration: const InputDecoration(
-        labelText: "Phone Number",
-        hintText: "Enter your phone number",
+      decoration: InputDecoration(
+        labelText: ConstantStrings.phone,
+        hintText: ConstantStrings.enterphone,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Phone.svg"),
+        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/Phone.svg"),
       ),
     );
   }
@@ -85,11 +86,11 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
   TextFormField buildLastNameFormField() {
     return TextFormField(
       onSaved: (newValue) => compProfileController.lastName = newValue,
-      decoration: const InputDecoration(
-        labelText: "Last Name",
-        hintText: "Enter your last name",
+      decoration: InputDecoration(
+        labelText: ConstantStrings.lname,
+        hintText: ConstantStrings.enterlname,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/User.svg"),
+        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/User.svg"),
       ),
     );
   }
@@ -103,11 +104,11 @@ class CompleteProfileForm extends StatelessWidget with BaseController {
       validator: (value) {
         return compProfileController.firstNameValidator(value);
       },
-      decoration: const InputDecoration(
-        labelText: "First Name",
-        hintText: "Enter your first name",
+      decoration: InputDecoration(
+        labelText: ConstantStrings.fname,
+        hintText: ConstantStrings.enterfname,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/User.svg"),
+        suffixIcon: const CustomSurffixIcon(svgIcon: "assets/icons/User.svg"),
       ),
     );
   }

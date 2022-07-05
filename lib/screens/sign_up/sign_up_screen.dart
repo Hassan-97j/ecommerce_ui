@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/const/size_config.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ecommerce_ui/screens/sign_up/components/body.dart';
@@ -12,9 +13,9 @@ class SignUpScreen extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Sign Up"),
+        title: Text(ConstantStrings.signup),
       ),
-      body:  Body(),
+      body: Body(),
     );
   }
 }

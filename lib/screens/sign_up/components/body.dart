@@ -1,4 +1,5 @@
 import 'package:ecommerce_ui/const/basecontroller.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/components/socal_card.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
@@ -7,7 +8,7 @@ import 'package:ecommerce_ui/screens/sign_up/components/sign_up_form.dart';
 
 // ignore: must_be_immutable
 class Body extends StatelessWidget with BaseController {
-   Body({Key? key}) : super(key: key);
+  Body({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +23,11 @@ class Body extends StatelessWidget with BaseController {
               children: [
                 SizedBox(height: SizeConfig.screenHeight * 0.04), // 4%
                 Text(
-                  "Register Account",
+                  ConstantStrings.registeraccount,
                   style: Theme.of(context).textTheme.headline1,
                 ),
                 Text(
-                  "Complete your details or continue \nwith social media",
+                  ConstantStrings.completeDetails,
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Theme.of(context).primaryColorDark),
                 ),
@@ -52,7 +53,7 @@ class Body extends StatelessWidget with BaseController {
                 ),
                 SizedBox(height: getProportionateScreenHeight(20)),
                 Text(
-                  'By continuing your confirm that you agree \nwith our Term and Condition',
+                  ConstantStrings.termsandConditions,
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.caption,
                 )

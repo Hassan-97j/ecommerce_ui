@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:ecommerce_ui/const/assetsname.dart';
 import 'package:ecommerce_ui/const/basecontroller.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 import 'package:ecommerce_ui/screens/cart/controller/cartcontroller.dart';
@@ -40,7 +41,9 @@ class Body extends StatelessWidget with BaseController {
                 child: Row(
                   children: [
                     const Spacer(),
-                    SvgPicture.asset("assets/icons/Trash.svg"),
+                    SvgPicture.asset(
+                      AssetsName.trashicon,
+                    ),
                   ],
                 ),
               ),

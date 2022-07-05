@@ -1,3 +1,4 @@
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/const/size_config.dart';
 
@@ -9,7 +10,6 @@ class DiscountBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height: 90,
       width: double.infinity,
       margin: EdgeInsets.all(getProportionateScreenWidth(20)),
       padding: EdgeInsets.symmetric(
@@ -24,9 +24,9 @@ class DiscountBanner extends StatelessWidget {
         TextSpan(
           style: TextStyle(color: Theme.of(context).primaryColorLight),
           children: [
-            const TextSpan(text: "A Summer Surpise\n"),
+            TextSpan(text: ConstantStrings.summersSurprise),
             TextSpan(
-              text: "Cashback 20%",
+              text: ConstantStrings.cashback,
               style: TextStyle(
                 fontSize: getProportionateScreenWidth(24),
                 fontWeight: FontWeight.bold,

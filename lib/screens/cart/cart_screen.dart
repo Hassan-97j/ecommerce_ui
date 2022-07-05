@@ -1,3 +1,5 @@
+import 'package:ecommerce_ui/const/pagesname.dart';
+import 'package:ecommerce_ui/const/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_ui/models/cart.dart';
 
@@ -5,14 +7,14 @@ import 'package:ecommerce_ui/screens/cart/components/body.dart';
 import 'package:ecommerce_ui/screens/cart/components/check_out_card.dart';
 
 class CartScreen extends StatelessWidget {
-  static String routeName = "/cart";
+  static String routeName = PagesNames.cartscreen;
 
   const CartScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context),
-      body:  Body(),
+      body: Body(),
       bottomNavigationBar: const CheckoutCard(),
     );
   }
@@ -22,11 +24,11 @@ class CartScreen extends StatelessWidget {
       title: Column(
         children: [
           Text(
-            "Your Cart",
+            ConstantStrings.yourCart,
             style: TextStyle(color: Theme.of(context).primaryColorDark),
           ),
           Text(
-            "${demoCarts.length} items",
+            "$demoCarts.length $ConstantStrings.items",
             style: Theme.of(context).textTheme.caption,
           ),
         ],
